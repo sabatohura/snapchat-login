@@ -4,13 +4,144 @@
   --primary-color: #fffc00;
   --accent-color: #bbbbbb;
   --link-color: #0d46d9;
-  --accent-color: #bbbbbb;
   --bg-transparent-grey: #e8e2e237;
   --secondary-color: #000;
+  --main-background: #fff;
+  --btn-border-radius: 12px;
+  --screen-width: 320px;
+  --btn-height: 25px;
 }
 * {
   font-family: "Outfit", sans-serif;
 }
 body {
   background: var(--accent-color);
+}
+
+.main-screen {
+  background-color: var(--main-background);
+  width: var(--screen-width);
+  height: 90vh;
+  max-height: 560px;
+  border-radius: 6px;
+  box-shadow: 4px;
+  margin: auto;
+  margin-top: 40px;
+}
+.app-header {
+  background-color: var(--primary-color);
+  width: var(--screen-width);
+  height: 65px;
+  border-radius: 6px 6px 0px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+.app-icon {
+  margin-right: 20px;
+}
+.app-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.app-title {
+  font-weight: 600;
+  font-size: xx-large;
+  margin: 35px 0px 10px 0px;
+}
+.google-login-btn {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  height: var(--btn-height);
+  padding: 10px 30px;
+  font-size: large;
+  border-radius: var(--btn-border-radius);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 15px 0px;
+}
+.google-login-btn:hover {
+  scale: 105%;
+  transition: all;
+  transition-duration: 200ms;
+  background-color: #00000098;
+}
+.google-icon {
+  max-height: 30px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  max-height: 50px;
+}
+.trouble-login {
+  margin: 7px 0px;
+}
+.or-text {
+  font-size: x-large;
+  font-weight: 600;
+  color: var(--accent-color);
+  margin: 7px 0px;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px 0px;
+}
+.input-div {
+  border-bottom: 1px solid var(--secondary-color);
+}
+.input-field {
+  border: 0px solid;
+  padding: 7px 10px;
+  background-color: var(--main-background);
+  font-size: medium;
+  font-weight: 500;
+  background-color: transparent;
+  font-size: small;
+}
+.input-field:hover,
+.input-field:focus {
+  border: none;
+  outline: none;
+}
+.link-text {
+  color: var(--link-color);
+  font-weight: 500;
+  text-align: right;
+  cursor: pointer;
+  margin-top: 0px;
+}
+.login-btn {
+  margin: auto;
+  padding: 8px 40px;
+  border-radius: var(--btn-border-radius);
+  font-weight: 400;
+  font-size: 18px;
+  height: var(--btn-height);
+}
+.btn-normal {
+  background-color: var(--accent-color);
+  color: white;
+}
+.btn-active {
+  transition: all;
+  transition-duration: 200ms;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+.accent-text {
+  color: var(--accent-color);
+}
+.signup-text {
+  font-size: small;
+}
+.signup-link-text {
+  cursor: pointer;
 }
